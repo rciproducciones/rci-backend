@@ -17,7 +17,7 @@ require("./config")(app);
 
 // 👇 Start handling routes here
 const indexRoutes = require("./routes/index.routes");
-app.use("/api", indexRoutes);
+app.use("/", indexRoutes);
 
 const moviesRouter = require("./routes/movies.routes"); 
 app.use('/api', moviesRouter); 
